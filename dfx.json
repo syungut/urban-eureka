@@ -1,0 +1,24 @@
+{
+    "canisters": {
+      "myapp_backend": {
+        "type": "motoko",
+        "source": [
+          "src/myapp_backend"
+        ],
+        "build": "dfx build",
+        "candid": "src/myapp_backend/myapp_backend.did"
+      },
+      "myapp_frontend": {
+        "type": "assets",
+        "source": [
+          "src/myapp_frontend/public"
+        ]
+      }
+    },
+    "networks": {
+      "local": {
+        "bind": "127.0.0.1:8000"
+      }
+    }
+  }
+  
